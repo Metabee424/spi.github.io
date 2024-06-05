@@ -561,7 +561,7 @@ footer p {
 
 
 
-@media (max-width: 468px) {
+@media (max-width: 320px) {
 
     html {
         font-size: 52.5%;
