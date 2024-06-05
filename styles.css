@@ -158,7 +158,7 @@ nav ul li a:hover {
 .banner {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(200deg, #000000, #00000020) ,url(img/banner.jpg);
+    background-image: linear-gradient(200deg, #000000, #00000020) ,url(banner.jpg);
     height: 40rem;
     background-size: cover;
     background-position: center;
