@@ -602,7 +602,7 @@ footer p {
     /*********** RESPONSIVE ************/
 
 
-@media (max-width: 468px) {
+@media (max-width: 400px) {
 
     .main-content {
         width: fit-content;
