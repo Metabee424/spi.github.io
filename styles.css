@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color:#0000FF;
+    --background-color: #E0E0E0;
+    --dark-color: #151515;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    
+    font-size: 70.5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        color: #333333; /* Color del texto */
+    background-color: var(--background-color);
+}
+
+/* UTILIDADES */
+
+/* .main-content {
+    
+} */
+
+.container {
+    margin: 0 auto;
+}
+
+/* TITULOS */
+
+.heading-1 {
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+.heading-2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* HEADER */
+
+header {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 10px 0; /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    position: fixed; /* Posición fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Z-index alto para estar encima del contenido */
+}
+
+/* Estilo para el Logo */
+
+.logo {
+    
+    margin-left: 20px; /* Margen izquierdo */
+    font-size: 35px;
+    font-weight: bold;
+    color: #333333; /* Color del texto oscuro */
+    text-decoration: none;
+}
+
+/* Estilo para el Navbar */
+nav {
+    float: right; /* Alineación a la derecha */
+    margin-right: 20px; /* Margen derecho */
+}
+
+nav ul {
+    list-style-type: none; /* Sin estilos de lista */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: flex;
+    align-content: space-between;
+    font-size: 2rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #001F3F; /* Color del texto oscuro */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f2f2f2; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el Banner */
+
+
+
+/************ MENU NAVBAR ********************/
+
+.menu-navbar {
+    display:flex;
+    justify-content: center;
+    margin-right: 20rem;  
+    
+}
+
+.menu {
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+/********** BANNER ***************/
+
+.banner {
+    
+    height: 80rem;
+    display: flex;
+    background-image: linear-gradient(200deg, #000000, #00000020) ,url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.content-banner {
+    
+    height: 20rem;
+    max-width: 90rem;
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;  
+    margin-right: 10rem;
+    margin-top: 30rem;
+}
+
+
+
+/* VENTAJAS */
+
+.section-skills {
+    
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    align-items: center;
+    
+}
+
+
+.skills ul {
+    
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    list-style: none;
+    font-size: 4rem;
+       
+}
+
+
+.skills ul li {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.skills ul li span {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+/* BODY */
+
+/* SECCION SOLUCIONES */
+
+.main-content-container{
+    
+    background: linear-gradient(135deg, #001F3F, #004080); /* Degradado de azul oscuro a azul medio */
+    background-size: cover;
+    background-position: center;
+    /* height: 90rem; */
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+
+.head-services {
+    
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+.container-services {
+    
+    box-shadow: rgba(0, 0, 0, 0.8);
+    width: 50rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+       
+    
+}
+
+.service {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 25rem;
+    /* border:  5px solid black; */
+    padding: 20px;
+    border-radius: 30px;
+   
+}
+
+
+.card-service {
+
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                    /* 0 0 0 2px rgb(255, 255, 255), */
+                         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+.content-service {
+    
+    font-size: 1.5rem;
+}
+
+.img-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    
+    height: 15rem;
+    width: 20rem;
+    border-radius: 3rem;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                    /* 0 0 0 2px rgb(255, 255, 255), */
+                         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+ 
+
+
+/* SECCION SOBRE NOSOTROS */
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    padding: 50px px; /* Espaciado interno */
+    
+    height: 50rem;
+}
+
+/* Estilo para la Imagen */
+.about-section img {
+    width: 60rem; /* Ancho de la imagen */
+    border-radius: 2rem; /* Borde redondeado */
+    margin-bottom: 30px; /* Margen inferior */
+    margin-top: 30px;
+}
+
+/* Estilo para el Título */
+.about-section h2 {
+    font-size: 28px; /* Tamaño del título */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el Párrafo */
+.about-section p {
+    
+    width: 40rem;
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para el Botón CTA */
+.cta-button {
+    
+    display: inline-block;
+    background-color: #DC3545; /* Color de fondo rojo */
+    color: #FFFFFF; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #C82333; /* Color de fondo rojo más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+
+/* SECCION INFO BANNER */
+
+.div-container {
+    
+    padding: 2rem;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3), /* Sombra interna arriba */
+                inset 0 -4px 8px rgba(0, 0, 0, 0.3), /* Sombra interna abajo */
+                inset 4px 0 8px rgba(0, 0, 0, 0.3), /* Sombra interna izquierda */
+                inset -4px 0 8px rgba(0, 0, 0, 0.3); /* Sombra interna derecha */
+}
+.container-info {
+
+    background: linear-gradient(135deg, #001F3F, #f8f9fa); /* Degradado de azul oscuro a gris claro */ /* Degradado de azul oscuro a azul medio */
+    color: #FFFFFF; /* Color del texto */
+    
+    border-top-left-radius: 65px; /* Esquina superior izquierda redondeada */
+    border-bottom-right-radius: 65px; /* Esquina inferior derecha redondeada */
+    width: 100rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para mayor profundidad */
+    
+
+    /* background: rgb(30,31,28);
+    background: linear-gradient(22deg, rgba(30,31,28,1) 0%, rgba(61,62,40,1) 31%, rgba(85,87,24,1) 56%, rgba(109,111,14,1) 77%, rgba(141,145,11,1) 90%, rgba(178,185,8,1) 100%); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #fff; 
+    /* border-top: 10px solid #4285f6 ; */
+    
+}
+
+.content-info-card {
+    width: 40rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 8rem;
+    margin-top: 4rem;
+    
+}
+
+.content-info-card a {
+    margin-top: 3rem;
+}
+
+.cta-button {
+    background-color: #DC3545; /* Rojo vibrante */
+    color: #FFFFFF; /* Texto blanco */
+    width: 30rem;
+    height: 5rem;
+    padding: 5px 5px;
+    border: none;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px; /* Esquinas ligeramente redondeadas */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Eliminar subrayado si es un enlace */
+    display: inline-block; /* Para enlaces */
+}
+
+.cta-button:hover {
+    background-color: #DC3545;
+}
+
+
+.info-img {
+    
+    margin-top: 4rem;
+    margin-right: 8rem;
+}
+
+.img-info {
+    width: 33rem; 
+    border-radius: 2rem;
+}
+
+.heading-info {
+    width: 40rem;
+    text-align: left;
+}
+
+.content-info {
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 10rem;
+}
+
+.content-banner-container {
+    
+    text-align: justify;
+}
+
+/* SECCION BLOG */
+
+.container-blog {
+    background: linear-gradient(135deg, #001F3F, #004080); /* Degradado de azul oscuro a azul medio */
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.blog-post {
+    
+    width: 60rem;
+    background: #FFFFFF;
+    color: #333333; /* Color del texto oscuro */
+    padding: 20px;
+    margin: 60px 0;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden;
+    padding: 4rem;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.blog-post h2 {
+    margin: 10px 0 10px;
+    font-size: 5rem;
+}
+
+.blog-post p {
+    font-size: 3rem;
+    line-height: 1.6;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+/* Contenedor del Formulario */
+
+.container-contact {
+    padding: 2rem;
+}
+
+.contact-form {
+    background: linear-gradient(135deg, #001F3F, #004080); 
+    padding: 30px;
+    border-radius: 25px; /* Esquinas redondeadas */
+    width: 50rem; /* Ancho del 50% de la página */
+    margin: 20px auto; /* Centrado horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: #FFFFFF; /* Color del texto */
+}
+
+/* Estilos Generales para los Campos del Formulario */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilos Específicos para el Área de Texto */
+.contact-form textarea {
+    height: 100px; /* Altura del área de texto */
+    resize: none; /* Evitar el redimensionamiento */
+}
+
+/* Estilo para el Botón Enviar */
+.contact-form button {
+    background-color: #DC3545; /* Rojo vibrante */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Esquinas ligeramente redondeadas */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #C82333; /* Rojo más oscuro para el hover */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Etiquetas del Formulario */
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+
+.contact-form h1 {
+    padding: 2rem 0;
+}
+
+.contact-form h2 {
+    padding: 0.5rem 0;
+}
+
+
+/* *********************** FOOTER ********************** */
+
+/* Estilos Generales para el Footer */
+footer {
+    background-color: #212529; /* Color de fondo oscuro */
+    color: #FFFFFF; /* Color del texto blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para los Enlaces del Footer */
+footer a {
+    color: #FFFFFF; /* Color del texto blanco */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para los Enlaces del Footer en Hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el Texto del Footer */
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+
+    /*********** RESPONSIVE ************/
+
+
+@media (max-width: 468px) {
+
+    .main-content {
+        width: fit-content;
+    }
+
+    html {
+        font-size: 42.5%;
+    }
+    
+    header {
+        display: flex;
+    }
+
+    .heading-1 {
+        font-size: 6rem;
+    }
+
+    .container-services {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-service {
+        width: 90rem;
+        height: 40rem;
+        
+    }
+
+    .card-service h2 {
+
+        font-size: 6rem;}
+
+    .card-service p {
+        font-size: 3rem;
+    }
+
+    .image {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .about-section {
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    .about-section p {
+        font-size: 4rem;
+        width: 70rem;
+        text-align: justify;
+    }
+
+    .cta-button {
+        height: 10rem;
+    }
+
+    .container-info {
+        
+        height: 60rem;
+        padding: 6rem;
+    }
+
+   .heading-info {
+    margin-top: 4rem;
+    margin-bottom: -10rem;
+   }
+
+    .container-info {
+        font-size: 4rem;
+    }
+
+    .container-info p {
+        margin-bottom: -6rem;
+        position: relative;
+        display: none;
+    }
+
+   
+}
+
+
+
+/******* HEADDER ********/
+
+   
+
+
+
+
+
