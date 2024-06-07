@@ -607,11 +607,11 @@ footer p {
    html {
         width: fit-content;
         font-size: 42.5%;
-        align-items: center;
     }
 
     * {
-        padding: 0%;        
+        padding: 0rem;
+        margin: 0rem;
     }
     
     header {
@@ -633,8 +633,8 @@ footer p {
     }
 
     .card-service h2 {
-
-        font-size: 6rem;}
+        font-size: 6rem;
+    }
 
     .card-service p {
         font-size: 3rem;
