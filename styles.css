@@ -29,7 +29,7 @@ html {
 }
 
 body {
-        color: #333333; /* Color del texto */
+    color: #333333; /* Color del texto */
     background-color: var(--background-color);
 }
 
@@ -610,6 +610,11 @@ footer p {
 
     html {
         font-size: 42.5%;
+        align-items: center;
+    }
+
+    * {
+        padding: 0%;        
     }
     
     header {
